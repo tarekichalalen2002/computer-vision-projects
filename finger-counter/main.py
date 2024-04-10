@@ -44,8 +44,6 @@ while True:
             if lmList[ft][2] < lmList[ft-1][2]:
                 count += 1
     cv2.putText(img, f'finger count: {str(count)}', (10, 150), cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 255), 3)
-    
-    # h,w,c = overlayList[2].shape
-    # img[0:h,0:w] = overlayList[2]
     cv2.imshow("Image", img)
     cv2.waitKey(1)
+
